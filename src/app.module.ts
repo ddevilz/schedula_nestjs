@@ -16,6 +16,7 @@ import { PatientModule } from './modules/patient/patient.module';
 import { AppointmentModule } from './modules/appointment/appointment.module';
 import { TenantModule } from './modules/tenant/tenant.module';
 import { RoleModule } from './modules/role/role.module';
+import { CalendarModule } from './modules/calendar/calendar.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { RoleModule } from './modules/role/role.module';
     AppointmentModule,
     TenantModule,
     RoleModule,
+    CalendarModule,
   ],
   controllers: [AppController],
   providers: [

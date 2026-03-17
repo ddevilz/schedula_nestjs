@@ -10,6 +10,11 @@ export default () => ({
     accessToken: process.env.ROLLBAR_ACCESS_TOKEN,
     environment: process.env.ROLLBAR_ENVIRONMENT,
   },
+  googleCalendar: {
+    clientId: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    redirectUri: process.env.GOOGLE_REDIRECT_URI,
+  },
   database: {
     host: process.env.POSTGRES_HOST,
     port: parseInt(process.env.POSTGRES_PORT),
