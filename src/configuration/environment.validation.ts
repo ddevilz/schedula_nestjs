@@ -21,6 +21,18 @@ class EnvironmentVariables {
 
   @IsString()
   @IsOptional()
+  GOOGLE_CLIENT_ID: string;
+
+  @IsString()
+  @IsOptional()
+  GOOGLE_CLIENT_SECRET: string;
+
+  @IsString()
+  @IsOptional()
+  GOOGLE_REDIRECT_URI: string;
+
+  @IsString()
+  @IsOptional()
   POSTGRES_HOST: string = 'localhost';
 
   @IsNumber()
