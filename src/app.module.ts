@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { validate } from './configuration/environment.validation';
 import configuration from './configuration/configuration';
 import { LoggerModule } from 'nestjs-rollbar';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -21,6 +22,7 @@ import { RoleModule } from './modules/role/role.module';
     ConfigModule.forRoot({
       load: [configuration],
       isGlobal: true,
+      validate,
     }),
     LoggerModule.forRootAsync({
       imports: [ConfigModule],

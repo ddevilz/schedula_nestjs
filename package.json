@@ -1,10 +1,10 @@
 {
-  "name": "nest-starter-kit",
+  "name": "schedula",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Appointment scheduling system built with NestJS",
+  "author": "Schedulla Team",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
